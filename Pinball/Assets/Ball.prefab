@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 21264092}
   - component: {fileID: 5809050}
   - component: {fileID: 5040334}
-  - component: {fileID: 11439708}
+  - component: {fileID: 114532416434972470}
+  - component: {fileID: 114756144182136124}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Player
@@ -26,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 101054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.5, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -23.06745, y: -2.0250003, z: 0}
+  m_LocalScale: {x: 1.2260104, y: 1.2260104, z: 2.452021}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,20 +64,10 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.38
---- !u!114 &11439708
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50fd565a13665854eb2e6a6f08123264, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &21264092
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -107,11 +98,16 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a7593545ed25d8046b96ba2eaf7e8066, type: 3}
   m_Color: {r: 0.2205882, g: 0.2205882, b: 0.2205882, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -123,3 +119,25 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 101054}
   m_IsPrefabParent: 1
+--- !u!114 &114532416434972470
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fd565a13665854eb2e6a6f08123264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114756144182136124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c57bd5d5fba8ba458ba205bc6a80329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
