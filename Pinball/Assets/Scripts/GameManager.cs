@@ -10,7 +10,9 @@ using Life;
 public class GameManager : MonoBehaviour
 {
     public GameObject ballPrefab;
+    public GameObject ballPrefab2;
     public GameObject ballPoint;
+    public GameObject ballPoint2;
     public Text gameoverText;
     public GameObject ball;
     public int counter=0;
@@ -58,6 +60,6 @@ public class GameManager : MonoBehaviour
     public void CreateBall()
     {
         GameObject ball = Instantiate(ballPrefab, ballPoint.transform.position, Quaternion.identity) as GameObject;
-      
+        GameObject ball2= Instantiate(ballPrefab2, ballPoint.transform.position, Quaternion.identity) as GameObject;
     }
 }
