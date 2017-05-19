@@ -23,7 +23,7 @@ public class MagneticBall : MonoBehaviour {
     {
         currentSurface = c.gameObject;
         ContactPoint2D contactPoint = c.contacts[0];
-        //set new gravity along the normal of contact point
+
         gravityOffset.force = (-1f * Physics2D.gravity) + (-1f * contactPoint.normal);
         rb.gravityScale = 0.0f;
     }
@@ -31,9 +31,9 @@ public class MagneticBall : MonoBehaviour {
     {
         if (c.gameObject == currentSurface)
         {
-            //get contact point
+           
             ContactPoint2D contactPoint = c.contacts[0];
-            //set new gravity along the normal of contact point
+         
             gravityOffset.force = (-4f * Physics2D.gravity) + (-4f * contactPoint.normal);
         }
 
@@ -63,13 +63,12 @@ public class MagneticBall : MonoBehaviour {
     }
     void Jump()
     {
-        //don't jump if not on a surface
+  
         if (currentSurface == null) return;
 
-        //add jump force away from current surface
+       
         rb.AddForce(-1f * gravityOffset.force * jumpForce);
 
-        //return to normal gravity
         gravityOffset.force = Vector3.zero;
     }
 }
